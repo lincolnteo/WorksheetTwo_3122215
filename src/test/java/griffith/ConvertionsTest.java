@@ -28,6 +28,12 @@ class ConvertionsTest {
 
 	@Test
 	void stringToInteger() {
+		String str = "1234";
+		String str1 = "-12345";
+		String str2 = "";
+		assertEquals(1234,con.stringToInteger(str));
+		assertEquals(-12345,con.stringToInteger(str1));
+		assertEquals(404,con.stringToInteger(str2));
 	}
 
 	@Test

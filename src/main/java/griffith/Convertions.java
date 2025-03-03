@@ -15,8 +15,11 @@ public class Convertions {
 		return dollar * 0.8;
 	}
 	public int stringToInteger(String val){
-
-		return 0;
+		if(val.isBlank()){
+			return 404;
+		}
+		int integer = Integer.parseInt(val);
+		return integer;
 	}
 	public String integerToString(int val){
 		return null;
