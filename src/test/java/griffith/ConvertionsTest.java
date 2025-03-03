@@ -44,10 +44,18 @@ class ConvertionsTest {
 		assertEquals("1234",con.integerToString(str));
 		assertEquals("-12345",con.integerToString(str1));
 		assertEquals("Error",con.integerToString(str2));
-	}
+
 	}
 
 	@Test
 	void switchCase() {
+		String str = "is";
+		String str1 = "IT";
+		String str2 = "working";
+		String str3 = "123465";
+		assertEquals("IS",con.switchCase(str));
+		assertEquals("it",con.switchCase(str1));
+		assertEquals("WORKING",con.switchCase(str2));
+		assertEquals("Error",con.switchCase(str3));
 	}
 }

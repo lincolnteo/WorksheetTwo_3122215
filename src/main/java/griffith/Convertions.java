@@ -29,6 +29,15 @@ public class Convertions {
 		return string;
 	}
 	public String switchCase(String str){
-		return null;
+		if (str.isBlank()) {
+			return "Error";
+		}
+		if (str.matches("[A-Z]+")){
+			return str.toLowerCase();
+		}
+		if(str.matches("[0-9]+")){
+			return "Error";
+		}
+		return str.toUpperCase();
 	}
 }
