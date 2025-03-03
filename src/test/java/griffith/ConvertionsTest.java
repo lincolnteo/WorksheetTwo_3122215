@@ -4,10 +4,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 class ConvertionsTest {
-
+	Convertions con = new Convertions();
 	@Test
 	void euroToDollar() {
-		Convertions con = new Convertions();
 		double eur = 100;
 		double eur1 = 200;
 		double eur2 = 0;
@@ -18,6 +17,13 @@ class ConvertionsTest {
 
 	@Test
 	void dollarToEuro() {
+		double dol = 100;
+		double dol1 = 200;
+		double dol2 = 0;
+		assertEquals(80,con.dollarToEuro(dol));
+		assertEquals(160,con.dollarToEuro(dol1));
+		assertEquals(404,con.dollarToEuro(dol2));
+
 	}
 
 	@Test

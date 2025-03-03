@@ -9,7 +9,10 @@ public class Convertions {
 		return dollar;
 	}
 	public double dollarToEuro(double dollar){
-		return 0;
+		if (dollar == 0 ) {
+			return 404;
+		}
+		return dollar * 0.8;
 	}
 	public int stringToInteger(String val){
 
