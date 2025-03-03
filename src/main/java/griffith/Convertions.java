@@ -22,7 +22,11 @@ public class Convertions {
 		return integer;
 	}
 	public String integerToString(int val){
-		return null;
+		if(val == 0){
+			return "Error";
+		}
+		String string = Integer.toString(val);
+		return string;
 	}
 	public String switchCase(String str){
 		return null;

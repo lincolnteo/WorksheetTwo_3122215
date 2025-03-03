@@ -38,6 +38,13 @@ class ConvertionsTest {
 
 	@Test
 	void integerToString() {
+		int str = 1234;
+		int str1 = -12345;
+		int str2 = 0;
+		assertEquals("1234",con.integerToString(str));
+		assertEquals("-12345",con.integerToString(str1));
+		assertEquals("Error",con.integerToString(str2));
+	}
 	}
 
 	@Test
